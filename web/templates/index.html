@@ -1,0 +1,608 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="static/images/logo1.png" type="image/x-icon">
+
+      <title>Fliesen Silahic</title>
+      <meta name="keywords" content="Fliesen Silahic – Fliesenleger in Stockach & Umgebung">
+      <meta name="description" content="Fliesen Silahic – Ihr zuverlässiger Fliesenleger. Ich biete professionelle Leistungen für das Verlegen von Fliesen in Badezimmern, Fluren, Terrassen und mehr. Außerdem: Badsanierung, Fliesen, Mosaik und Naturstein verlegen sowie Umbau.">
+      <meta name="author" content="Fliesen Silahic">
+      
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static "css/responsive.css" %}">
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static "images/fevicon.png" %}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static "css/jquery.mCustomScrollbar.min.css" %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="{% static "https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" %}">
+      
+      <!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+   </head>
+   <body>
+      <!-- banner section start --> 
+<div class="banner_section layout_padding">
+   <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <a class="navbar-brand" href="{% url "index" %}"><img src="{% static "images/logo.png" %}"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="{% url "index" %}">Startseite</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#über-mich">Über Mich</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#gallerie">Galerie</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#dienstleistungen">Dienstleistungen</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#kontakt">Kontakt</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url "impressum" %}">Impressum</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url "daten" %}">Datenschutzerklärung</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h1 class="banner_taital">Fliesen Silahic</h1>
+                     <p class="banner_text">Perfekte Fliesenarbeiten für Ihr Zuhause – Handwerk mit Leidenschaft</p>
+                     <div class="btn_main">
+                        <div class="started_text"><a href="#über-mich">mehr lesen</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>                
+         </div>     
+      </div>
+   </div>
+</div>
+<!-- banner section end -->
+
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div id="über-mich" class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital">Willkommen bei Fliesen Silahic</div>
+                  <p class="about_text"> Ich bin stolz darauf, Ihnen erstklassige Fliesenarbeiten anzubieten, die Ihren Anforderungen und Wünschen entsprechen. Vertrauen Sie auf meine Erfahrung und Leidenschaft für perfektes Handwerk.
+                     <br><br>Das Fliesenlegerhandwerk habe ich in Slowenien erlernt und seit 2019 als Kleinunternehmer gearbeitet. Ab September 2024 bin ich als Selbstständiger tätig, um meine eigenen Vorstellungen und Ideen in die Tat umzusetzen und Ihnen die bestmögliche Qualität zu bieten.
+                     Ich freue mich darauf, von Ihnen zu hören und Ihre Projekte gemeinsam mit Ihnen erfolgreich umzusetzen.</p>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="{% static "images/about-img.jpg" %}"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- gallery section start -->
+      <div id="gallerie" class="gallery_section layout_padding">
+         <!-- Balkon Terasse Section -->
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="gallery_taital">Galerie</h1>
+                  <p class="gallery_text">Hier finden Sie Beispiele meiner Fliesenarbeiten – Qualität und Design vereint</p>
+               </div>
+            </div>
+            <div class="gallery_section_2">
+               {% if balkon_terasa_images %}
+               <h2 class="album_title">Balkon/Terasse</h2>
+               <div class="row">
+                  {% for image in balkon_terasa_images %}
+                     {% if image.image1 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ image.image1.url }}" class="lightbox-link">
+                              <img src="{{ image.image1.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if image.image2 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ image.image2.url }}" class="lightbox-link">
+                              <img src="{{ image.image2.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if image.image3 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ image.image3.url }}" class="lightbox-link">
+                                 <img src="{{ image.image3.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if image.image4 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ image.image4.url }}" class="lightbox-link">
+                                 <img src="{{ image.image4.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if image.image5 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ image.image5.url }}" class="lightbox-link">
+                                 <img src="{{ image.image5.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if image.image6 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ image.image6.url }}" class="lightbox-link">
+                                 <img src="{{ image.image6.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                  {% endfor %}
+               </div>
+            </div>
+            {% endif %}
+         </div>
+      
+         <!-- WC Section -->
+         <div class="container">
+            <div class="gallery_section_2">
+               <h2 class="album_title">Bad/Toilette</h2>
+               <div class="row">
+                  {% for x in wc_images %}
+                     {% if x.image1 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image1.url }}" class="lightbox-link">
+                              <img src="{{ x.image1.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image2 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image2.url }}" class="lightbox-link">
+                              <img src="{{ x.image2.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image3 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image3.url }}" class="lightbox-link">
+                                 <img src="{{ x.image3.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                         
+                         {% if x.image4 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image4.url }}" class="lightbox-link">
+                                 <img src="{{ x.image4.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image5 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image5.url }}" class="lightbox-link">
+                                 <img src="{{ x.image5.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image6 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image6.url }}" class="lightbox-link">
+                                 <img src="{{ x.image6.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+      
+         
+         <!-- Küche Section -->
+         <div class="container">
+            <div class="gallery_section_2">
+               <h2 class="album_title">Küche</h2>
+               <div class="row">
+                  {% for x in kuhinja_images %}
+                     {% if x.image1 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image1.url }}" class="lightbox-link">
+                              <img src="{{ x.image1.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image2 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image2.url }}" class="lightbox-link">
+                              <img src="{{ x.image2.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image3 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image3.url }}" class="lightbox-link">
+                                 <img src="{{ x.image3.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                         
+                         {% if x.image4 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image4.url }}" class="lightbox-link">
+                                 <img src="{{ x.image4.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image5 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image5.url }}" class="lightbox-link">
+                                 <img src="{{ x.image5.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image6 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image6.url }}" class="lightbox-link">
+                                 <img src="{{ x.image6.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+
+
+         <!-- Flur Section -->
+         <div class="container">
+            <div class="gallery_section_2">
+               <h2 class="album_title">Flur</h2>
+               <div class="row">
+                  {% for x in hodnik_images %}
+                     {% if x.image1 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image1.url }}" class="lightbox-link">
+                              <img src="{{ x.image1.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image2 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image2.url }}" class="lightbox-link">
+                              <img src="{{ x.image2.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image3 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image3.url }}" class="lightbox-link">
+                                 <img src="{{ x.image3.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                         
+                         {% if x.image4 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image4.url }}" class="lightbox-link">
+                                 <img src="{{ x.image4.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image5 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image5.url }}" class="lightbox-link">
+                                 <img src="{{ x.image5.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image6 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image6.url }}" class="lightbox-link">
+                                 <img src="{{ x.image6.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+         
+
+         <!-- Umbau Section -->
+         <div class="container">
+            <div class="gallery_section_2">
+               <h2 class="album_title">Umbau</h2>
+               <div class="row">
+                  {% for x in umbau_images %}
+                     {% if x.image1 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image1.url }}" class="lightbox-link">
+                              <img src="{{ x.image1.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image2 %}
+                     <div class="custom-col">
+                        <div class="container_main">
+                           <a href="{{ x.image2.url }}" class="lightbox-link">
+                              <img src="{{ x.image2.url }}" alt="Avatar" class="image">
+                           </a>
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% if x.image3 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image3.url }}" class="lightbox-link">
+                                 <img src="{{ x.image3.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                         
+                         {% if x.image4 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image4.url }}" class="lightbox-link">
+                                 <img src="{{ x.image4.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image5 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image5.url }}" class="lightbox-link">
+                                 <img src="{{ x.image5.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+
+                         {% if x.image6 %}
+                         <div class="custom-col">
+                             <div class="container_main">
+                              <a href="{{ x.image6.url }}" class="lightbox-link">
+                                 <img src="{{ x.image6.url }}" alt="Avatar" class="image"></a>                               
+                             </div>
+                         </div>
+                         {% endif %}
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+         
+         
+      
+
+
+      <!-- gallery section end -->
+      <!-- services section start -->
+      <div id="dienstleistungen" class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="services_taital">Dienstleistungen</h1>
+                  <p class="services_text">Vertrauen Sie auf meine Erfahrung und Fachkenntnis in folgenden Bereichen</p>
+               </div>
+            </div>
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                     <div class="services_section_2">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="services_box">
+                                 <div class="services_icon"><img src="{% static "images/icon-1.png" %}"></div>
+                                 <h3 class="wedding_text">Badsanierung</h3>
+                                 <p class="lorem_text">Ich biete umfassende Badsanierungen an, die Ihr Badezimmer in eine moderne und funktionale Wohlfühloase verwandeln. 
+                                    Von der Planung bis zur Umsetzung kümmere ich mich um jedes Detail und garantiere erstklassige Qualität und Präzision</p>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="services_box">
+                                 <div class="services_icon"><img src="{% static "images/icon-2.png" %}"></div>
+                                 <h3 class="wedding_text">Fliesen, Mosaik und Naturstein verlegen</h3>
+                                 <p class="lorem_text">Ob klassische Fliesen, anspruchsvolle Mosaikarbeiten oder edle Natursteinverlegung – ich bin Ihr Fachmann für hochwertige Verlegearbeiten. 
+                                    Präzise Handwerkskunst und Liebe zum Detail sind meine Markenzeichen</p>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="services_box">
+                                 <div class="services_icon"><img src="{% static "images/icon-3.png" %}"></div>
+                                 <h3 class="wedding_text">Komplett Umbau</h3>
+                                 <p class="lorem_text">Von der Entkernung bis zum letzten Feinschliff: Ich übernehme den kompletten Umbau und sorge dafür, dass alles nach Ihren Wünschen und höchsten Standards umgesetzt wird</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>              
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+      <!-- testimonial section start -->
+      <div class="testimonial_section layout_padding">
+         <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">         
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h1 class="testimonial_taital">Kundenbewertungen</h1>
+                           <p class="testimonial_text">Als Fliesenleger lege ich großen Wert auf Qualität und Kundenzufriedenheit. Da ich viele meiner bisherigen Projekte über externe Plattformen durchgeführt habe, finden Sie meine Kundenbewertungen dort. Ich lade Sie herzlich ein, meine Arbeit und das Feedback meiner zufriedenen Kunden auf dieser Plattform zu lesen. So können Sie sich ein besseres Bild von meiner Arbeit und den Erfahrungen meiner Kunden machen</p>                                   
+                        </div>
+                     </div>
+                  </div>                
+               </div>
+               <div class="more-reviews">
+                  <a href="https://www.my-hammer.de/auftragnehmer/fliesen-silahic" target="_blank">Hier auf My Hammer können Sie weitere Bewertungen lesen</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- testimonial section end -->
+      <!-- contact section start -->
+      <div id="kontakt" class="contact_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="contact_taital">Kontakt</h1>
+               </div>
+            </div> 
+            <div class="contact_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="mail_section">
+                        <form id="contact-form" method="post" action="{% url "index_post" %}"> 
+                           {% csrf_token %}
+                           <input type="text" class="mail_text" placeholder="Name" name="ime">
+                           <input type="text" class="mail_text" placeholder="Tel. Nummer" name="telefon"> 
+                           <input type="text" class="mail_text" placeholder="Email" name="email">
+                           <textarea class="massage-bt" placeholder="Nachricht" rows="5" id="comment" name="poruka"></textarea>
+                           <div class="send_bt"><button type="submit">absenden</button></div>
+                        </form>
+                        <div id="message-container"></div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">                 
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                     <div class="location_text">                  
+                        <ul>
+                           <li>
+                              <a href="https://www.google.com/maps/place/Am+Lichtberg+14,+78333+Stockach/@47.8580978,9.0603991,17z/data=!3m1!4b1!4m6!3m5!1s0x479a67958bc183d3:0x54a6cd0430178a13!8m2!3d47.8580942!4d9.062974!16s%2Fg%2F11c5fhjtlr?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" target="_blank"><span class="padding_15"><img src="{% static "images/map-icon.png" %}"></span>Am Lichtberg 14, 78333 Stockach  </a>
+                           </li>
+                           <li>
+                              <a href="tel:017624055521"><span class="padding_15"><img src="{% static "images/call-icon.png" %}"></span>(+49) 17624055521</a>
+                           </li>
+                           <li>
+                              <a href="mailto:fliesen.silahic@gmail.com" target="_blank"><span class="padding_15"><img src="{% static "images/mail-icon.png" %}"></span>fliesen.silahic@gmail.com</a>
+                           </li>
+                           <li>
+                              <a href="https://www.instagram.com/fliesen_silahic/" target="_blank"><span class="padding_15"><img src="{% static "images/insta.jpg" %}"></span>fliesen_silahic</a>
+                           </li>
+                           <li>
+                              <a href="https://www.facebook.com/profile.php?id=61564891022928" target="_blank"><span class="padding_15"><img src="{% static "images/face.jpg" %}"></span>Fliesen Silahic</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="map_main">
+               <div class="map-responsive">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.0446886682143!2d9.06039907671098!3d47.85809777057631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a67958bc183d3%3A0x54a6cd0430178a13!2sAm%20Lichtberg%2014%2C%2078333%20Stockach!5e0!3m2!1sde!2sde!4v1726594467527!5m2!1sde!2sde" width="600" height="368" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2024 All Rights Reserved<a href=""></a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="{% static "js/jquery.min.js" %}"></script>
+      <script src="{% static "js/popper.min.js" %}"></script>
+      <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+      <script src="{% static "js/jquery-3.0.0.min.js" %}"></script>
+      <script src="{% static "js/plugin.js" %}"></script>
+      <!-- sidebar -->
+      <script src="{% static "js/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+      <script src="{% static "js/custom.js" %}"></script>
+      <!-- javascript --> 
+      <script src="{% static "js/owl.carousel.js" %}"></script>
+      <script src="{% static "https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" %}"></script>  
+      <script src="{% static "https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" %}" type="text/javascript"></script>
+      <!-- Magnific Popup JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+   </body>
+</html>
